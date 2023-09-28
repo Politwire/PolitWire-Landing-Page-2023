@@ -1,23 +1,166 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PolitWire - Page Provisoire</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900&display=swap">
+
+
     <style>
-        /* Ajoutez ici vos styles CSS personnalisés */
         body {
-            font-family: Arial, sans-serif;
+            background-color: #F3F3F3;
+            font-size: 1rem;
+        }
+
+        h1,
+        h2 {
+            font-family: "Source Serif 4";
+            line-height: 1.55;
+            font-size: 24px;
+            font-weight: 900;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 16px 0px;
+        }
+
+        h2 {
+            font-size: 1, 66rem;
+        }
+
+        .head {
             text-align: center;
-            padding: 20px;
+
+        }
+
+        .container {
+            font-family: "Source Sans Pro", sans-serif;
+            margin: 0px auto;
+
+            padding: 0rem 2rem;
+            text-align: center;
+            line-height: 1.55;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 520px;
+            }
+        }
+
+        .black-box {
+            background-color: #141414;
+            border-radius: 16px;
+            margin: 16px 32px;
+            padding: 16px 32px 32px 32px;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        .white-box{
+            background-color: white;
+            border-radius: 16px;
+            margin: 16px 32px;
+            padding: 16px 32px 32px 32px;
+            color: #141414;
+            
+        }
+
+        .black-button{
+            padding: 16px;
+            background-color: #141414;
+            border-radius: 16px;
+            color: #F3F3F3;
+            font-family: "Source Sans Pro";
+            border-style: none;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .white-button {
+            padding: 16px;
+            background-color: white;
+            border-radius: 16px;
+            font-size: 1rem;
+            font-family: "Source Sans Pro";
+            border-style: none;
+            font-weight: bold;
+        }
+
+        .subscribe-button:hover {
+            background-color: #F3F3F3;
+            cursor: pointer;
+        }
+
+        .linkedin-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            margin: 8px;
+            border: 1px solid #A3A3A3;
+            border-radius: 50%;
+
+        }
+
+
+        .linkedin-icon {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            color: #141414;
+
+        }
+
+        .grey-line {
+            border: none;
+            height: 1px;
+            background-color: #4D4D4D;
+        }
+
+        .footer-text {
+            color: #4D4D4D;
         }
     </style>
 </head>
+
 <body>
-    <img src="/img/politwire-logo.svg" alt="PolitWire">
-    <p>Bienvenue sur PolitWire.</p>
-    <p>Nous sommes actuellement en phase de conception du projet.</p>
-    <p><b>“Politwire est une plateforme de données et d'analyse qui rassemble des informations sur les politiciens, leurs opinions et leurs relations, en provenance de diverses sources médiatiques.”</b></p>
+    <div class="head">
+        <img src="/img/politwire-logo.svg" alt="PolitWire">
+        <h1>Bienvenue sur PolitWire.</h1>
+    </div>
+
+    <div class="container">
+        <p>Nous sommes actuellement en phase de conception du projet.</p>
+        <p><b>“Politwire est une plateforme de données et d'analyse qui rassemble des informations sur les politiciens,
+                leurs opinions et leurs relations, en provenance de diverses sources médiatiques.”</b></p>
+        <div class="white-box">
+            <p>Vous êtes invité à participer au test de notre prototype</p>
+            <a href="https://forms.gle/AFdBLacK2kxQMwM46" target="_blank"><button class="black-button">Tester le prototype</button></a>
+
+        </div>
+        <div class="black-box">
+            <h2>S'abonner au PolitWire Insider</h2>
+            <p>Suivez et participez à l’évolution de Politwire.</p>
+            <a href="https://forms.gle/AFdBLacK2kxQMwM46" target="_blank"><button class="white-button">S’abonner</button></a>
+        </div>
+        <p>Soutenez Politwire en nous suivant sur les réseaux sociaux</p>
+        <a href="https://www.linkedin.com/company/politwire" target="_blank"></a>
+        <div class="linkedin-button">
+            <div class="linkedin-icon">
+                <img src="img/linkedin-icon.svg" alt="LinkedIn">
+            </div>
+        </div>
+        </a>
+        <hr class="grey-line">
+        <p class="footer-text">© Politwire 2023</p>
+    </div>
+
 </body>
+
 </html>
- 
