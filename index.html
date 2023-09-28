@@ -46,31 +46,37 @@
             line-height: 1.55;
         }
 
-        @media (min-width: 768px) {
-            .container {
-                max-width: 520px;
-            }
-        }
-
         .black-box {
             background-color: #141414;
             border-radius: 16px;
-            margin: 16px 32px;
-            padding: 16px 32px 32px 32px;
+            margin: 8px 8px;
+            padding: 8px 16px 32px 16px;
             color: #fff;
             font-size: 1rem;
         }
 
-        .white-box{
+        @media (min-width: 768px) {
+            .container {
+                max-width: 520px;
+            }
+
+            .black-box {
+
+                margin: 16px 32px;
+                padding: 16px 32px 32px 32px;
+            }
+        }
+
+        .white-box {
             background-color: white;
             border-radius: 16px;
             margin: 16px 32px;
             padding: 16px 32px 32px 32px;
             color: #141414;
-            
+
         }
 
-        .black-button{
+        .black-button {
             padding: 16px;
             background-color: #141414;
             border-radius: 16px;
@@ -131,7 +137,7 @@
 
 <body>
     <div class="head">
-        <img src="/img/politwire-logo.svg" alt="PolitWire">
+        <img src="https://ik.imagekit.io/politimg/PolitWire-2023-Landing-Page/PolitWire.svg?updatedAt=1695934608750" alt="PolitWire">
         <h1>Bienvenue sur PolitWire.</h1>
     </div>
 
@@ -147,7 +153,8 @@
         <div class="black-box">
             <h2>S'abonner au PolitWire Insider</h2>
             <p>Suivez et participez à l’évolution de Politwire.</p>
-            <a href="https://forms.gle/AFdBLacK2kxQMwM46" target="_blank"><button class="white-button">S’abonner</button></a>
+            <a href="https://forms.gle/AFdBLacK2kxQMwM46" target="_blank"><button
+                    class="white-button">S’abonner</button></a>
         </div>
         <p>Soutenez Politwire en nous suivant sur les réseaux sociaux</p>
         <a href="https://www.linkedin.com/company/politwire" target="_blank"></a>
