@@ -35,6 +35,7 @@
 
         .head {
             text-align: center;
+            padding-top: 32px;
 
         }
 
@@ -138,38 +139,69 @@
         ::selection {
     background-color: #f4e285;
   }
+  video {
+    max-width: 400px;
+    height: auto;
+    margin-top: 20px; /* Exemple de marge pour espacer la vidéo du titre */
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espacement optionnel en haut de la vidéo */
+}
+.beta-button {
+    padding: 16px;
+    background-color: #F3F3F3; /* Couleur de fond orange-rouge pour attirer l'attention */
+    border-radius: 16px;
+    color: #141414;
+    font-family: "Source Sans Pro";
+    border-style: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    margin-top: 20px; /* Espacement optionnel au-dessus du bouton */
+}
+
+.beta-button:hover {
+    background-color: #4D4D4D; /* Couleur légèrement plus foncée au survol */
+}
+
+.beta-description {
+    font-size: 0.8rem; /* Taille de police plus petite pour la description */
+    color: #4D4D4D; /* Couleur assortie au bouton pour la description */
+}
+
     </style>
 </head>
 
 <body>
-    <!-- <div class="absolute bg-white w-full h-full"></div>
+    <div class="head">
+        <img src="https://ik.imagekit.io/politimg/PolitWire-2023-Landing-Page/PolitWire.svg?updatedAt=1695934608750" alt="PolitWire">
+        <h1>Explore Politics Like Never Before</h1>
+    </div>
     
-    <div
-      class="absolute inset-0 bg-[url('/static/pattern.png')] z-[1] animate-pulse"
-    ></div> -->
-    <!-- <div class="z-[2]"> -->
-
-        <div class="head">
-            <img src="https://ik.imagekit.io/politimg/PolitWire-2023-Landing-Page/PolitWire.svg?updatedAt=1695934608750" alt="PolitWire">
-            <h1>Explore Politics like never before</h1>
-        </div>
+    <div class="video-container">
+        <video controls src="/video/NOFINISH-What-if-PolitWire.mp4"></video>
+    </div>
     
-        <div class="container">
-            <p>PolitWire is the platform to find all the politicians and media in the world and have analyzes on their media impacts</p>
-            
-            <a href="https://forms.gle/AFdBLacK2kxQMwM46" target="_blank"><button
-                        class="black-button">Join the waitlist</button></a>
-                        <p class="">
-                            © 2023 - 2024 politwire.org <br/> Politics, News, Stats, Sentiments,
-                            Analysis, in real time
-                          </p>
-            
-            
-            
-            
-        </div>
-    <!-- </div> -->
-
+    <div class="container">
+        <p>PolitWire is the platform to find all the politicians and media in the world and have analyzes on their media impacts</p>
+        
+        <a href="https://forms.gle/AFdBLacK2kxQMwM46" target="_blank"><button class="black-button">Join the waitlist</button></a>
+        
+        <p>
+            <a href="https://politwire-beta.netlify.app/" target="_blank" class="beta-button">Access Beta Version</a>
+        </p>
+        <p>
+            <span class="beta-description"> (Under development; errors and missing features may occur)</span>
+        </p>
+        
+        <p class="">
+            © 2023 - 2024 politwire.org <br/> Politics, News, Stats, Sentiments,
+            Analysis, in real time
+        </p>
+    </div>
 </body>
 
 </html>
